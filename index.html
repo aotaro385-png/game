@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>もぐらたたきミニゲーム</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>もぐらたたきミニゲーム</h1>
+      <p class="description">30秒のあいだに、出てくるもぐらをできるだけクリックしよう！</p>
+
+      <section class="status" aria-label="ゲーム情報">
+        <p>スコア: <span id="score">0</span></p>
+        <p>残り時間: <span id="time">30</span>秒</p>
+      </section>
+
+      <button id="startButton" class="start-button">スタート</button>
+
+      <div class="grid" id="grid" aria-label="もぐらの穴">
+        <button class="hole" data-index="0" aria-label="穴1"></button>
+        <button class="hole" data-index="1" aria-label="穴2"></button>
+        <button class="hole" data-index="2" aria-label="穴3"></button>
+        <button class="hole" data-index="3" aria-label="穴4"></button>
+        <button class="hole" data-index="4" aria-label="穴5"></button>
+        <button class="hole" data-index="5" aria-label="穴6"></button>
+        <button class="hole" data-index="6" aria-label="穴7"></button>
+        <button class="hole" data-index="7" aria-label="穴8"></button>
+        <button class="hole" data-index="8" aria-label="穴9"></button>
+      </div>
+
+      <p id="message" class="message" aria-live="polite">スタートを押してゲーム開始！</p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
